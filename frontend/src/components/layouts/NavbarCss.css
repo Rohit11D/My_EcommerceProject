@@ -1,0 +1,62 @@
+/* Button to open the overlay navigation */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .btndiv{
+    background-color: #111;
+  }
+  /* The overlay */
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  /* Show the overlay */
+  .overlay.show {
+    height: 100%;
+  }
+  
+  /* The navigation menu inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Style the links inside the navigation menu */
+  .overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* The close button */
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+  }
+  
+  .overlay-content a:hover, .overlay-content a:focus {
+    color: #f1f1f1;
+  }
+  
