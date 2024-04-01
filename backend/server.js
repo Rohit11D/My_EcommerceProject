@@ -12,11 +12,15 @@ process.on("uncaughtException",(err)=>{
 // connecting database
 connectDatabase();
 // config
-dotenv.config({path:"BACKEND/config/config.env"});
+dotenv.config({path:"backend/config/config.env"});
 
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+  });
+  
 const port = process.env.PORT;
 const server = app.listen(port,()=>{
-console.log(`server started on http: // localhost:${process.env.PORT}`);
+console.log(`server started on http: // localhost:${port}`);
 });
 
 // Unhandled Promise Rejection

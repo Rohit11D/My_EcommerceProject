@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
 // config
-dotenv.config({path:"BACKEND/config/config.env"});
+dotenv.config({path:"backend/config/config.env"});
 
 
 // connecting mongodb
